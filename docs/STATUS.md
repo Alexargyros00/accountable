@@ -14,3 +14,11 @@ The user interview clarified `docs/intent.md`:
 - Keep record CRUD, search, sorting, status filters, timelines and follow-ups. Defer activity editing/deletion, creating deals directly in columns, and manual card ordering.
 
 Documentation was reviewed for consistency with the interview answers and brand guidance. No application code was changed or tests run; this work only adds the specification and updates status.
+
+## Dashboard and pipeline mockups
+
+**Selected design: mockup 1 — Overview** (`docs/mockups/01-overview.html`). Use its dashboard and pipeline layouts as the visual direction for the MVP, following `docs/spec.md` and the brand skill. Options 2 and 3 remain references only. This records the design choice; application implementation has not started.
+
+Three interactive HTML design options are available in `docs/mockups/`: Overview, Sales desk and Workspace. Each includes Dashboard and Pipeline views, local brand fonts and shared assets. Six full-page Playwright screenshots are saved beside the HTML files; `docs/mockups/README.md` links each option and explains the preview scope.
+
+Playwright verified desktop layouts at 1440 × 900 and 1280 × 800, six pipeline stages, stage/probability changes, immediate expected and won revenue updates, and follow-up completion. Both views of each option were visually reviewed, with no console or JavaScript errors observed. These are browser-only design prototypes with session-only changes, not the implemented MVP; application implementation has not started.
