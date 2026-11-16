@@ -1,6 +1,12 @@
 # Project status
 
-Intent discovery and the MVP specification are complete for the course-demo MVP. Implementation has not yet started.
+Intent discovery, the MVP specification and the implementation plan are complete for the course-demo MVP. Implementation has not yet started.
+
+`docs/plan.md` defines proposed files, six implementation phases, risks and proof through backend/frontend tests, end-to-end Chrome journeys and manual browser review. It follows the selected mockup 1 and the SQLAlchemy Core requirement in `docs/TECH_STACK.md`. This planning work changes documentation only; no application code was written or tests run.
+
+The packaging plan was simplified after review: one backend package, one initial routes module, connection/table definitions together and focused business functions using SQLAlchemy Core directly. Frontend features own their pages, components, queries and tests, without a parallel pages directory. The plan explicitly avoids speculative repositories, base services, generic CRUD/form engines and custom state-management layers; further splits follow demonstrated complexity. Requirements, six phases and R01–R34 proof coverage remain in scope. No application code was changed.
+
+The plan's Proof section now includes requirement traceability groups R01–R34, linking specification requirements to phases and planned test/manual evidence, plus a mapping of all eight intent success criteria. The review records clarifications and adds explicit coverage for previously implicit test cases. All groups are Planned, not implemented or verified; the review found no blocking document contradiction. No application code or tests were added or run.
 
 `docs/spec.md` defines requirements, record and deletion rules, stage transitions, dashboard calculations, a 90-day history-based funnel, the brand-aligned desktop design, local architecture, sample data and acceptance checks. It uses `docs/intent.md` (the requested `docs/intend.md` does not exist), `docs/TECH_STACK.md` and the brand skill as sources. Technical choices in the specification are proposed implementation decisions, not installed dependencies.
 
